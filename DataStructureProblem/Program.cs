@@ -12,9 +12,9 @@ namespace DataStructureProblem
            // linkedList.Add(30);
             //linkedList.Add(70);
 
-            //linkedList.Append(linkedList,56);
-            //linkedList.Append(linkedList,30);
-            //linkedList.Append(linkedList,70);
+            //linkedList.Append(56);
+            //linkedList.Append(30);
+            //linkedList.Append(70);
 
             //linkedList.AddAfter(30,56);
 
