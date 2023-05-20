@@ -7,25 +7,21 @@ namespace DataStructureProblem
     public class LinkedList
     {
         public Node head;
-
-        public Node GetLastNode(LinkedList linkedList)
-        {
-            Node temp = linkedList.head;
+        
+        public void Append(int new_data)
+        {            
+            Node new_node = new Node(new_data);
+            if (head == null)
+            {
+                head = new_node;
+                return;
+            }
+            Node temp = head;
             while (temp.next != null)
             {
                 temp = temp.next;
             }
-            return temp;
-        }
-        public void Append(LinkedList linkedList, int new_data)
-        {
-            Node new_node = new Node(new_data);
-            if (linkedList.head == null)
-            {
-                linkedList.head = new_node;
-                return;
-            }
-            Node lastNode = GetLastNode(linkedList);
+            Node lastNode = temp;
             lastNode.next = new_node;
         }
         public void Add(int data)
